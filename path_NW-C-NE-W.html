@@ -1,0 +1,119 @@
+<html>
+    
+<head><!--#HEAD#-->
+<!--Meta-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- BOOTSTRAP -->
+    <!-- #Disabled for grid compatiability <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> -->
+<!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+<!-- Style -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Icon -->
+    <!--
+    <![if !IE>
+        <link rel="icon" href="/img/Assistant.gif" type="image/x-icon" />
+    <![endif]>
+    !-->
+    <link rel="icon" href="/img/Assistant_logo.png" type="image/ico" />   
+    <title>RWB game demo</title>
+</head>
+
+    
+<body><!--#BODY#-->
+   
+    
+<!-- Menu start-->
+    
+<!--Welcome-->
+
+        <h1 class="modal-title" id="centerTxts"><br><br>Disease Simulator</h1>
+   
+    
+    <!--Menu section start-->
+
+
+
+    <div class="container">
+
+	 <div class="row">
+
+	    <div class="column">
+	      <a><img src="map_district_START.png"></a>
+	    </div>
+
+	    <div class="column">
+	      <a><img src="map_district.infected_NWHousing.png"></a></a>
+	      <div class="w-100"></div>
+	      <a><img src="map_district.infected_WLonePop.png"></a><a><img src="map_district.infected_CMayoral.png"></a>
+	      <div class="w-100"></div>
+	      <a><img src="map_district_SWFactory.png"></a>
+	    </div>
+	 
+
+	  <div class="column">
+	     <a><img src="map_district.infected_NEBusiness.png"></a><a href="win_LVL1.html" class="areaSelect"><img src="map_district_ELonePop.png"></a>
+	     <div class="w-100"></div>
+	     <a><img src="map_district_SEHousing.png"></a>
+	    </div>
+	  </div>
+
+	  <div class="column">
+	      <a><img src="map_district_END.png"></a>
+	  </div>
+    
+      <div class="column">
+        <div id="key">
+            <h4>How to play:</h4>
+            <p id="keyTxt">
+                You can try to infect people around you by clicking an area to cross a road. Your aim is to spread the disease to another city by getting it on the bus.
+                <br><br>
+                You cannot spread the disease across a road with a <span class="txtPop_resistant">resistant</span> person nearby because they have a natural resistance to the disease so they can't get ill and spread it.
+                <br><br>
+                You cannot infect <span class="txtPop_vaccinated">vaccinated</span> people because the vaccine helps their body make the right type of white blood cell to fight off the disease.
+            </p>
+            <h4>Key:</h4>
+            <p id="keyTxt">
+                <img src="pop_infected.png">
+                = Infected 
+                <br>
+                <img src="pop_resistant.png">
+                = Resistant 
+                <br>
+                <img src="pop_vaccinated.png">
+                = Vaccinated
+            </p>
+        </div>
+      </div>
+</div> <!--/container-->
+
+<!--Footer-->
+
+<!-- jQuery and javascript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="../assets/js/docs.min.js"></script>
+    <!-- Javascripts -->
+  <script type="text/javascript">
+    // Quickstart within-button pop-over //
+    $("[data-toggle=popover]").popover();
+  });
+  var audioElm = document.getElementById('ambiance'); audioElm.muted = !audioElm.muted;
+`   </script>
+    <script type="text/javascript">
+    // Quickstart within-button pop-over //
+    if ("ga" in window) {
+    tracker = ga.getAll()[0];
+    if (tracker)
+        tracker.send("event", "Test", "Test GA");
+    }
+    </script>
+</body>
+
+</html>

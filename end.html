@@ -1,0 +1,141 @@
+<html>
+    
+<head><!--#HEAD#-->
+<!--Meta-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+<!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+<!-- Style -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Icon -->
+    <!--
+    <![if !IE>
+        <link rel="icon" href="/img/Assistant.gif" type="image/x-icon" />
+    <![endif]>
+    !-->
+    <link rel="icon" href="/img/Assistant_logo.png" type="image/ico" />   
+    <title>RWB game demo</title>
+</head>
+
+    
+<body><!--#BODY#-->
+   
+    
+<!-- Menu start-->
+    
+<!--Welcome-->
+<div class="container">
+<div class="row">
+    <div>
+         
+        <h2 class="modal-title" id="centerTxts"><br><br>Welcome to our virtual assistant, how may we help you?</h2>
+        <img src="img/Assistant_1loop.gif" class="centerImgs" id="assistantIMG">
+    </div>
+    
+    <!--Menu section start-->
+    <div class="container-fluidd col-sm-0 col-md-2 col-lg-3 col-xl-3"></div>
+    <div class="container-fluidd col-sm-12 col-md-8 col-lg-6 col-xl-6">
+        <div class="panel-group" id="accordion accordionMODAL" role="tablist" aria-multiselectable="true">
+     <!--<strong id="ModalCloseHelp" style="color: red;"><span class=" glyphicon glyphicon-volume-up" aria-hidden="tru"></span> Turn your speakers up if you want this menu read out to you <span class=" glyphicon glyphicon-volume-up" aria-hidden="tru"></strong>-->
+       
+            
+<!--Panels start-->
+
+    <!--#1h-->
+    <div class="panel panel-NEW text-center topPanel">
+        <div class="panel-heading" role="tab" id="headingOne" >
+            <h4 class="panel-title" id="panel-titleMOD">I need to use a service</h4> 
+            <a href="services_appts.html"><button type="button" class="btn btn-new btn-lg lrgBtn">Appointments</button></a>
+            <a href="services_scripts.html"><button type="button" class="btn btn-new btn-lg lrgBtn">Prescriptions</button></a>
+            <a href="services_tests.html"><button type="button" class="btn btn-new btn-lg lrgBtn">Test results</button></a>
+            <a href="services_sicknotes.html"><button type="button" class="btn btn-new btn-lg lrgBtn">Sick notes</button></a>
+        </div>
+    </div>
+
+    <!--#4h-->
+    <div class="panel panel-NEW text-center">
+        <div class="panel-heading" role="tab" id="headingFour">
+           <h4 class="panel-title" id="panel-titleMOD">I need information</h4>
+            <a href="info.html"><button type="button" class="btn btn-new btn-lg lrgBtn">About the practice</button></a>
+            <a href="info_contact.html"><button type="button" class="btn btn-pop btn-lg lrgBtn">Contact/Find-Us</button></a>
+        </div>
+    </div>
+        
+        <!--#5h-->
+    <div class="panel panel-NEW text-center">
+        <div class="panel-heading" role="tab" id="headingFive">
+            <h4 class="panel-title" id="panel-titleMOD">I need medical advice</h4>
+            <a href="advice.html"><button type="button" class="btn btn-new btn-lg lrgBtn">Get advice online</button></a>
+            
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+            <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-URGENT btn-lg lrgBtn aBtn" data-toggle="modal" data-target="#myModal">It's urgent</button>
+            </a>
+            
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content panel-URGENT">
+      <div class="modal-header panel-URGENT">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Urgent advice</h4>
+      </div>
+      <div class="modal-body panel-URGENT">
+        <h4 id="centerTxts"><strong>If it's an emergency call 999.<br>
+                If it's not an emergency but you still need urgent advice call 111.</strong>
+            </h4>
+      </div>
+      <div class="modal-footer panel-URGENT">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+            
+        </div>
+    </div>
+    
+          
+            
+  </div>
+ </div> <!--/accordian-->
+    
+    <div class="container-fluidd col-sm-0 col-md-2 col-lg-3 col-xl-3"></div>
+    
+</div> <!--/container-->
+
+<!--Footer-->
+
+<!-- jQuery and javascript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="../assets/js/docs.min.js"></script>
+    <!-- Javascripts -->
+  <script type="text/javascript">
+    // Quickstart within-button pop-over //
+    $("[data-toggle=popover]").popover();
+  });
+  var audioElm = document.getElementById('ambiance'); audioElm.muted = !audioElm.muted;
+`   </script>
+    <script type="text/javascript">
+    // Quickstart within-button pop-over //
+    if ("ga" in window) {
+    tracker = ga.getAll()[0];
+    if (tracker)
+        tracker.send("event", "Test", "Test GA");
+    }
+    </script>
+</body>
+
+</html>
